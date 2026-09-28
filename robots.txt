@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /studio.html
+Disallow: /checkout.html
+Disallow: /thank-you.html
+# After you connect your domain, the Studio publishes sitemap.xml automatically.
+# Sitemap: https://YOURDOMAIN.com/sitemap.xml

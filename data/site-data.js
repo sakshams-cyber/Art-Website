@@ -1,0 +1,216 @@
+/* =====================================================================
+   SITE DATA — generated & edited by your Studio (studio.html).
+   You normally never need to touch this file by hand: open studio.html,
+   make your changes, then press "Publish". (Hand-editing is fine too —
+   just keep it valid JavaScript.)
+   ===================================================================== */
+window.SITE_DATA = {
+  "version": 1,
+  "updatedAt": "2026-09-27T12:00:00.000Z",
+  "settings": {
+    "artistName": "Shubhra",
+    "siteTitle": "Shubhra — Original Paintings & Limited Prints",
+    "heroEyebrow": "Original paintings & limited-edition prints",
+    "tagline": "Color, texture and quiet stories — painted by hand, made to live on your walls.",
+    "intro": "I paint the moments that make me stop and stare — golden light on hills, rain on city streets, flowers that refuse to sit still. Every piece here is painted by hand in my studio, signed, and shipped with care to its new home.",
+    "bio": "I started painting on the back of old school notebooks and never really stopped. Today I work mostly in acrylic and oil, building color in thick, textured layers so every painting changes as the light in your room changes.\n\nMy work sits between landscape and abstraction: real places, remembered feelings. I'm drawn to golden hours, rainy evenings, wild gardens and the quiet geometry hidden in ordinary things.\n\nWhen you buy an original, you're not just getting a painting — you're supporting an independent artist and keeping a studio full of color alive. Thank you for being here.",
+    "statement": "Art should make a room feel like somewhere. I paint so that the walls around you hold a little more light.",
+    "location": "",
+    "portrait": "assets/img/studio-palette.webp",
+    "heroArtwork": "golden-hour",
+    "contactEmail": "",
+    "social": { "instagram": "", "tiktok": "", "youtube": "", "pinterest": "", "x": "", "facebook": "" },
+    "currency": "USD",
+    "announcement": "Free shipping on orders over $200 · Every original is signed & ships with a certificate of authenticity",
+    "accent": "#e2492f",
+    "shipping": {
+      "homeCountry": "US",
+      "domestic": 15,
+      "international": 45,
+      "freeOver": 200,
+      "expressEnabled": true,
+      "express": 25,
+      "processing": "Ships in 3–5 business days",
+      "note": "Originals are wrapped in glassine, corner-protected, boxed and fully insured. Prints ship flat or rolled in a rigid tube."
+    },
+    "taxRate": 0,
+    "bundle": { "enabled": true, "minItems": 2, "percent": 10 },
+    "discounts": [
+      { "code": "FIRSTPIECE", "percent": 10, "active": true, "note": "Collector's list welcome gift" }
+    ],
+    "newsletter": {
+      "enabled": true,
+      "popup": true,
+      "headline": "Join the Collector's List",
+      "text": "First look at new paintings before they go public, studio stories, and a welcome gift for your first piece.",
+      "offerCode": "FIRSTPIECE"
+    },
+    "payments": {
+      "paypalClientId": "",
+      "paypalMe": "",
+      "venmo": "",
+      "cashapp": "",
+      "zelle": "",
+      "zelleName": "",
+      "stripeLink": "",
+      "custom": []
+    },
+    "orders": { "web3formsKey": "", "formsubmitEmail": "" },
+    "commissions": {
+      "open": true,
+      "text": "Want something made just for your space? I take a limited number of commissions each season — landscapes, abstracts, pet portraits and custom sizes.",
+      "startingAt": 250,
+      "leadTime": "4–6 weeks"
+    },
+    "policies": {
+      "returns": "Not in love? Return any original within 14 days of delivery for a full refund (return shipping is on me for originals). Prints can be exchanged if they arrive damaged — just send a photo.",
+      "coa": "Every original comes signed on the front and back, with a numbered certificate of authenticity.",
+      "care": "Hang away from direct sunlight and humid rooms. Dust gently with a soft, dry brush."
+    },
+    "faq": [
+      { "q": "Are these real paintings?", "a": "Yes — every original is painted by hand on canvas, panel or paper. Prints are high-quality giclée reproductions on archival cotton paper, signed by me." },
+      { "q": "Do paintings come framed?", "a": "Unless the listing says “framed”, canvases arrive ready to hang (painted edges, hanging wire) and works on paper arrive unframed so you can choose a frame you love." },
+      { "q": "How long does shipping take?", "a": "Orders are carefully packed and shipped within 3–5 business days. You'll get a tracking number by email as soon as your piece is on its way." },
+      { "q": "Can I pay in installments?", "a": "When paying with PayPal you may be offered Pay in 4 or Pay Monthly at checkout (subject to eligibility). For larger originals, email me — I'm happy to arrange a layaway plan." },
+      { "q": "Do you ship internationally?", "a": "Yes! International shipping is calculated at checkout. Import duties or taxes, if any, are the buyer's responsibility." }
+    ],
+    "process": [
+      { "title": "Sketch", "text": "Every piece begins as a pencil sketch — sometimes dozens — until the composition feels right." },
+      { "title": "Layers", "text": "Color is built slowly, in thin glazes and thick textured strokes, over days or weeks." },
+      { "title": "Signed & certified", "text": "Each original is signed, varnished, photographed and documented with a certificate." },
+      { "title": "Delivered", "text": "Wrapped by hand, insured and tracked all the way to your door — ready to hang." }
+    ],
+    "testimonials": [],
+    "stats": { "collectors": 0, "countries": 0 },
+    "analytics": { "ga4": "" },
+    "domain": "",
+    "seo": { "description": "Original paintings and limited-edition prints by Shubhra. Hand-painted, signed, and shipped with care. Shop landscapes, abstracts and florals." }
+  },
+  "artworks": [
+    {
+      "id": "golden-hour", "sample": true,
+      "title": "Golden Hour Over the Valley",
+      "image": "art/golden-hour.webp", "thumb": "art/golden-hour-thumb.webp", "imgW": 1280, "imgH": 1600,
+      "medium": "Acrylic on stretched canvas", "width": 24, "height": 30, "unit": "in", "year": 2026,
+      "description": "The last ten minutes of daylight, when the hills turn violet and the sky can't decide between gold and rose. Built up in thick, textured layers — the ridgelines catch real light as you walk past.",
+      "tags": ["landscape", "sunset", "warm"], "colors": ["#633f6e", "#2a2441", "#f4b972", "#a25c7f", "#d9856d"],
+      "featured": true, "status": "available", "framed": false, "signed": true, "createdAt": "2026-09-20",
+      "options": [
+        { "id": "original", "label": "Original painting", "price": 480, "stock": 1, "kind": "original" },
+        { "id": "print-8x10", "label": "Giclée print · 8 × 10 in", "price": 35, "stock": 25, "kind": "print" },
+        { "id": "print-16x20", "label": "Giclée print · 16 × 20 in", "price": 75, "stock": 15, "kind": "print" }
+      ],
+      "compareAt": null, "stripeLink": ""
+    },
+    {
+      "id": "night-garden", "sample": true,
+      "title": "Night Garden",
+      "image": "art/night-garden.webp", "thumb": "art/night-garden-thumb.webp", "imgW": 1400, "imgH": 1400,
+      "medium": "Acrylic on canvas", "width": 24, "height": 24, "unit": "in", "year": 2026,
+      "description": "Flowers that only open after dark, and the fireflies that find them. Luminous pinks and golds glow against a deep indigo ground — it looks completely different under lamplight.",
+      "tags": ["floral", "night", "glow"], "colors": ["#101529", "#293b43", "#536365", "#e8dfdf", "#ff8fb1"],
+      "featured": true, "status": "available", "framed": false, "signed": true, "createdAt": "2026-09-12",
+      "options": [
+        { "id": "original", "label": "Original painting", "price": 520, "stock": 1, "kind": "original" },
+        { "id": "print-12x12", "label": "Giclée print · 12 × 12 in", "price": 55, "stock": 20, "kind": "print" }
+      ],
+      "compareAt": null, "stripeLink": ""
+    },
+    {
+      "id": "tidal-memory", "sample": true,
+      "title": "Tidal Memory",
+      "image": "art/tidal-memory.webp", "thumb": "art/tidal-memory-thumb.webp", "imgW": 1600, "imgH": 1280,
+      "medium": "Oil on canvas", "width": 30, "height": 24, "unit": "in", "year": 2026,
+      "description": "A late-summer evening at the shore, the sun laying a path of light across the water. Painted wet-into-wet with loose, rhythmic strokes you can almost hear.",
+      "tags": ["seascape", "ocean", "blue"], "colors": ["#215771", "#bcb5a2", "#e3d0b4", "#387688", "#7d939d"],
+      "featured": true, "status": "available", "framed": false, "signed": true, "createdAt": "2026-08-30",
+      "options": [
+        { "id": "original", "label": "Original painting", "price": 620, "stock": 1, "kind": "original" },
+        { "id": "print-8x10", "label": "Giclée print · 10 × 8 in", "price": 35, "stock": 25, "kind": "print" }
+      ],
+      "compareAt": null, "stripeLink": ""
+    },
+    {
+      "id": "quiet-field", "sample": true,
+      "title": "Quiet Field",
+      "image": "art/quiet-field.webp", "thumb": "art/quiet-field-thumb.webp", "imgW": 1200, "imgH": 1600,
+      "medium": "Oil on canvas", "width": 36, "height": 48, "unit": "in", "year": 2025,
+      "description": "Two fields of color breathing against each other. A large, meditative statement piece — the kind of painting a whole room organizes itself around.",
+      "tags": ["abstract", "color field", "statement"], "colors": ["#be4029", "#4f1f1c", "#e29c35", "#cc872b", "#7d3324"],
+      "featured": true, "status": "available", "framed": false, "signed": true, "createdAt": "2026-06-02",
+      "options": [
+        { "id": "original", "label": "Original painting", "price": 950, "stock": 1, "kind": "original" }
+      ],
+      "compareAt": null, "stripeLink": ""
+    },
+    {
+      "id": "city-in-the-rain", "sample": true,
+      "title": "City in the Rain",
+      "image": "art/city-in-the-rain.webp", "thumb": "art/city-in-the-rain-thumb.webp", "imgW": 1200, "imgH": 1600,
+      "medium": "Oil on linen panel", "width": 18, "height": 24, "unit": "in", "year": 2025,
+      "description": "Streetlights melting into wet pavement and one bright red umbrella. The original found its home with a collector — signed prints are still available.",
+      "tags": ["cityscape", "rain", "night"], "colors": ["#252d42", "#181e30", "#3f4459", "#656574", "#d49959"],
+      "featured": false, "status": "available", "framed": false, "signed": true, "createdAt": "2026-05-18",
+      "options": [
+        { "id": "original", "label": "Original painting", "price": 420, "stock": 0, "kind": "original" },
+        { "id": "print-12x16", "label": "Giclée print · 12 × 16 in", "price": 65, "stock": 12, "kind": "print" }
+      ],
+      "compareAt": null, "stripeLink": ""
+    },
+    {
+      "id": "bloom-no-7", "sample": true,
+      "title": "Bloom No. 7",
+      "image": "art/bloom-no-7.webp", "thumb": "art/bloom-no-7-thumb.webp", "imgW": 1280, "imgH": 1600,
+      "medium": "Acrylic on wood panel", "width": 16, "height": 20, "unit": "in", "year": 2026,
+      "description": "Seventh in a series of loose, joyful florals painted in a single sitting. Coral, rose and marigold on a warm cream ground — pure happiness for a kitchen or hallway.",
+      "tags": ["floral", "bright", "warm"], "colors": ["#e9dabf", "#ddccb2", "#e58570", "#e86a92", "#5c7d4b"],
+      "featured": false, "status": "available", "framed": true, "signed": true, "createdAt": "2026-09-24",
+      "options": [
+        { "id": "original", "label": "Original painting (framed)", "price": 340, "stock": 1, "kind": "original" },
+        { "id": "print-8x10", "label": "Giclée print · 8 × 10 in", "price": 35, "stock": 30, "kind": "print" }
+      ],
+      "compareAt": null, "stripeLink": ""
+    },
+    {
+      "id": "forest-hymn", "sample": true,
+      "title": "Forest Hymn",
+      "image": "art/forest-hymn.webp", "thumb": "art/forest-hymn-thumb.webp", "imgW": 1333, "imgH": 1600,
+      "medium": "Acrylic on canvas", "width": 20, "height": 24, "unit": "in", "year": 2026,
+      "description": "Morning light pouring through tall trees, like a quiet song. Layers of sap green and lemon light give this piece real depth.",
+      "tags": ["landscape", "forest", "green"], "colors": ["#809b62", "#5a7948", "#afbd7f", "#303725", "#e3e1a9"],
+      "featured": false, "status": "available", "framed": false, "signed": true, "createdAt": "2026-07-10",
+      "options": [
+        { "id": "original", "label": "Original painting", "price": 390, "stock": 1, "kind": "original" },
+        { "id": "print-8x10", "label": "Giclée print · 8 × 10 in", "price": 35, "stock": 25, "kind": "print" }
+      ],
+      "compareAt": 450, "stripeLink": ""
+    },
+    {
+      "id": "morning-geometry", "sample": true,
+      "title": "Morning Geometry",
+      "image": "art/morning-geometry.webp", "thumb": "art/morning-geometry-thumb.webp", "imgW": 1400, "imgH": 1400,
+      "medium": "Gouache on cotton paper", "width": 12, "height": 12, "unit": "in", "year": 2026,
+      "description": "Sun, arch and shadow reduced to their simplest shapes. Flat, velvety gouache with visible brush texture — a modern, graphic piece that pairs beautifully with mid-century furniture.",
+      "tags": ["abstract", "geometric", "modern"], "colors": ["#efe5d2", "#e5dac7", "#d4a143", "#c55837", "#2b46b2"],
+      "featured": false, "status": "available", "framed": false, "signed": true, "createdAt": "2026-08-14",
+      "options": [
+        { "id": "original", "label": "Original gouache", "price": 180, "stock": 1, "kind": "original" },
+        { "id": "print-8x8", "label": "Giclée print · 8 × 8 in", "price": 30, "stock": 40, "kind": "print" }
+      ],
+      "compareAt": null, "stripeLink": ""
+    },
+    {
+      "id": "desert-lines", "sample": true,
+      "title": "Desert Lines",
+      "image": "art/desert-lines.webp", "thumb": "art/desert-lines-thumb.webp", "imgW": 1257, "imgH": 1600,
+      "medium": "Limited-edition giclée print of a watercolor", "width": 11, "height": 14, "unit": "in", "year": 2026,
+      "description": "Layered dunes in terracotta and peach under a soft morning sun. Signed and numbered edition of 50 on 310gsm cotton rag paper.",
+      "tags": ["landscape", "desert", "warm", "edition"], "colors": ["#d9c2b1", "#70382e", "#dca478", "#af6747", "#f1e6da"],
+      "featured": false, "status": "available", "framed": false, "signed": true, "createdAt": "2026-09-01",
+      "options": [
+        { "id": "edition", "label": "Signed edition print · 11 × 14 in", "price": 60, "stock": 7, "kind": "print", "edition": 50 }
+      ],
+      "compareAt": null, "stripeLink": ""
+    }
+  ]
+};

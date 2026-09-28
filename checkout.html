@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Secure Checkout</title>
+  <meta name="description" content="Secure checkout.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#f5efe4">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://www.paypal.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..800,0..100,0..1;1,9..144,300..800,0..100,0..1&family=Manrope:wght@400;500;600;700;800&family=Mrs+Saint+Delafield&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="checkout" data-minimal>
+  <div id="site-header"></div>
+
+  <main id="main" class="checkout">
+    <div class="wrap co-grid">
+      <div class="co-main">
+        <a href="gallery.html" class="back-link"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg> Keep browsing</a>
+        <h1 class="co-title">Checkout</h1>
+        <ol class="co-steps" id="co-steps" aria-label="Checkout progress">
+          <li class="done"><span>1</span>Cart</li><li class="now"><span>2</span>Details</li><li><span>3</span>Payment</li><li><span>4</span>Done</li>
+        </ol>
+
+        <div class="co-empty" id="co-empty" hidden>
+          <h2 class="h2" style="font-style:italic">Your cart is empty</h2>
+          <p class="lead">Find a painting you love and it will appear here.</p>
+          <a class="btn btn-accent btn-lg" href="gallery.html">Browse the gallery</a>
+        </div>
+
+        <!-- Chrome autofill friendly: one <form>, real labels, standard name + autocomplete tokens -->
+        <form id="checkout-form" class="co-form" method="post" action="#" autocomplete="on" novalidate>
+          <section class="co-sec" aria-labelledby="h-contact">
+            <div class="co-sec-head"><h2 id="h-contact"><span class="n">1</span> Contact</h2><span class="muted small">Where should your receipt & tracking go?</span></div>
+            <div class="field" id="f-email">
+              <label for="email">Email</label>
+              <input class="input" id="email" name="email" type="email" autocomplete="email" inputmode="email" autocapitalize="off" spellcheck="false" required placeholder="you@example.com">
+              <div class="suggest" id="email-suggest" aria-live="polite"></div>
+              <div class="err">Please enter a valid email so I can send your receipt and tracking number.</div>
+            </div>
+            <div class="field" id="f-tel">
+              <label for="tel">Phone <span class="opt">(optional — for delivery updates)</span></label>
+              <input class="input" id="tel" name="tel" type="tel" autocomplete="tel" inputmode="tel" placeholder="(555) 555-1234">
+            </div>
+            <label class="check" style="margin-top:14px"><input type="checkbox" id="optin" name="optin"> Send me first looks at new paintings (unsubscribe anytime)</label>
+          </section>
+
+          <section class="co-sec" aria-labelledby="h-ship">
+            <div class="co-sec-head"><h2 id="h-ship"><span class="n">2</span> Shipping address</h2><span class="muted small">Tip: click a field and choose a saved address to autofill</span></div>
+            <div class="field" id="f-country">
+              <label for="country">Country / region</label>
+              <select class="select" id="country" name="country" autocomplete="shipping country" required></select>
+            </div>
+            <div class="field" id="f-name">
+              <label for="name">Full name</label>
+              <input class="input" id="name" name="name" type="text" autocomplete="shipping name" autocapitalize="words" required>
+              <div class="err">Please enter the recipient's full name.</div>
+            </div>
+            <div class="field" id="f-address1">
+              <label for="address1">Street address</label>
+              <input class="input" id="address1" name="address1" type="text" autocomplete="shipping address-line1" required placeholder="Street and house number">
+              <div class="err">Please enter a street address.</div>
+            </div>
+            <div class="field" id="f-address2">
+              <label for="address2">Apartment, suite, unit <span class="opt">(optional)</span></label>
+              <input class="input" id="address2" name="address2" type="text" autocomplete="shipping address-line2">
+            </div>
+            <div class="grid-3 keep">
+              <div class="field" id="f-zip">
+                <label for="zip" id="zip-label">ZIP code</label>
+                <input class="input" id="zip" name="zip" type="text" autocomplete="shipping postal-code" autocapitalize="characters" required>
+                <div class="hint" id="zip-hint" aria-live="polite"></div>
+                <div class="err">Please enter a valid postal code.</div>
+              </div>
+              <div class="field" id="f-city">
+                <label for="city">City</label>
+                <input class="input" id="city" name="city" type="text" autocomplete="shipping address-level2" required>
+                <div class="err">Please enter a city.</div>
+              </div>
+              <div class="field" id="f-state">
+                <label for="state" id="state-label">State</label>
+                <input class="input" id="state" name="state" type="text" autocomplete="shipping address-level1" list="state-list">
+                <datalist id="state-list"></datalist>
+                <div class="err">Please enter a state / province.</div>
+              </div>
+            </div>
+            <label class="check" style="margin-top:16px"><input type="checkbox" id="is-gift" name="gift"> This is a gift 🎁 — hide prices on the packing slip and add a handwritten note</label>
+            <div class="field" id="gift-wrap" hidden style="margin-top:14px">
+              <label for="gift-note">Gift message <span class="opt">(I'll handwrite it on a card)</span></label>
+              <textarea class="textarea" id="gift-note" name="giftNote" maxlength="300" autocomplete="off" placeholder="Happy birthday! Thought this would look perfect in your new place…"></textarea>
+            </div>
+            <div class="field" style="margin-top:14px">
+              <label for="notes">Order notes <span class="opt">(optional)</span></label>
+              <textarea class="textarea" id="notes" name="notes" autocomplete="off" rows="2" placeholder="Delivery instructions, questions about framing…" style="min-height:74px"></textarea>
+            </div>
+          </section>
+
+          <section class="co-sec" aria-labelledby="h-del">
+            <div class="co-sec-head"><h2 id="h-del"><span class="n">3</span> Delivery</h2></div>
+            <div class="ship-opts" id="ship-opts"></div>
+          </section>
+
+          <section class="co-sec" aria-labelledby="h-pay">
+            <div class="co-sec-head"><h2 id="h-pay"><span class="n">4</span> Payment</h2><span class="muted small"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg> Encrypted & secure</span></div>
+            <div class="pay-methods" id="pay-methods" role="radiogroup" aria-label="Payment method"></div>
+            <div class="pay-panel" id="pay-panel"></div>
+            <p class="muted small" style="margin-top:14px" id="terms-line"></p>
+          </section>
+        </form>
+
+        <div id="co-after" hidden></div>
+      </div>
+
+      <aside class="co-summary" aria-label="Order summary">
+        <button class="sum-toggle" id="sum-toggle" type="button" aria-expanded="false"><span>Order summary</span><b id="sum-toggle-total"></b></button>
+        <div class="sum-inner" id="sum-inner">
+          <h2 class="sum-title">Your order</h2>
+          <div id="sum-items"></div>
+          <div class="code-row" id="code-row">
+            <label class="sr-only" for="code">Discount code</label>
+            <input class="input" id="code" name="discount" placeholder="Gift card or discount code" autocomplete="off" autocapitalize="characters">
+            <button class="btn btn-ghost btn-sm" type="button" id="code-apply">Apply</button>
+          </div>
+          <div class="code-msg" id="code-msg" aria-live="polite"></div>
+          <div id="sum-meter"></div>
+          <div id="sum-totals"></div>
+          <ul class="sum-trust">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 3 4.5 6v5.5c0 4.5 3.2 8 7.5 9.5 4.3-1.5 7.5-5 7.5-9.5V6L12 3Z"/><path d="m8.8 12 2.3 2.3 4.2-4.6"/></svg> Secure checkout — card details never touch this site</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M4 4h16v11H4z"/><path d="M8 8h8M8 11h5"/><circle cx="16.5" cy="16.5" r="2.5"/></svg> Signed, with certificate of authenticity</li>
+            <li id="trust-returns"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h11a5 5 0 0 1 0 10H9"/><path d="m8 5-4 4 4 4"/></svg> <span></span></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="assets/js/core.js"></script>
+  <script src="assets/js/fx.js"></script>
+  <script src="assets/js/checkout.js"></script>
+</body>
+</html>

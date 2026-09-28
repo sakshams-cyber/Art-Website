@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Studio — manage your art website</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#1c1915">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..800,0..100,0..1;1,9..144,300..800,0..100,0..1&family=Manrope:wght@400;500;600;700;800&family=Mrs+Saint+Delafield&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/studio.css">
+</head>
+<body data-page="studio" data-fx="lite">
+  <div class="st-app">
+    <aside class="st-side" id="st-side">
+      <div class="st-brand"><span class="st-logo">Studio</span><span class="st-for" id="st-for">for your art website</span></div>
+      <nav class="st-nav" id="st-nav" aria-label="Studio sections">
+        <a href="#dashboard" data-v="dashboard"><i>◐</i>Dashboard</a>
+        <a href="#artworks" data-v="artworks"><i>▦</i>Artworks <b class="st-count" id="nav-art-count"></b></a>
+        <a href="#new" data-v="new" class="st-add"><i>＋</i>Add artwork</a>
+        <span class="st-nav-label">Your website</span>
+        <a href="#profile" data-v="profile"><i>✎</i>Profile & story</a>
+        <a href="#payments" data-v="payments"><i>$</i>Payments</a>
+        <a href="#orders" data-v="orders"><i>✉</i>Orders & emails</a>
+        <a href="#shipping" data-v="shipping"><i>⇪</i>Shipping & pricing</a>
+        <a href="#marketing" data-v="marketing"><i>✺</i>Marketing</a>
+        <span class="st-nav-label">Go live</span>
+        <a href="#publish" data-v="publish"><i>↑</i>Publish <b class="st-dot" id="nav-dirty" hidden></b></a>
+        <a href="#help" data-v="help"><i>?</i>Help & launch guide</a>
+      </nav>
+      <div class="st-side-foot">
+        <button class="st-preview" id="st-preview" type="button">Preview my changes ↗</button>
+        <a class="st-open" href="index.html" target="_blank" rel="noopener">Open live site ↗</a>
+      </div>
+    </aside>
+
+    <div class="st-main">
+      <header class="st-top">
+        <button class="icon-btn st-menu" id="st-menu" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8h16M4 16h11"/></svg></button>
+        <h1 class="st-title" id="st-title">Dashboard</h1>
+        <span class="st-save" id="st-save">✓ Saved in this browser</span>
+        <button class="btn btn-accent btn-sm" id="st-publish-top" type="button">Publish</button>
+      </header>
+      <div class="st-view" id="st-view" tabindex="-1"></div>
+    </div>
+  </div>
+
+  <script src="assets/js/core.js"></script>
+  <script src="assets/js/fx.js"></script>
+  <script src="assets/js/studio.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Gallery — Original Paintings & Prints for Sale</title>
+  <meta name="description" content="Browse original paintings and limited-edition prints for sale. Filter by color, size, medium and price.">
+  <meta name="theme-color" content="#f5efe4">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="The Gallery — Original Paintings & Prints">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..800,0..100,0..1;1,9..144,300..800,0..100,0..1&family=Manrope:wght@400;500;600;700;800&family=Mrs+Saint+Delafield&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="gallery">
+  <a class="skip-link" href="#grid">Skip to artworks</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-hero gallery-hero">
+      <div class="blob-bg" style="width:420px;height:420px;right:-100px;top:-120px;background:#e86a92"></div>
+      <div class="blob-bg" style="width:380px;height:380px;left:-160px;top:40px;background:#f3a712;animation-delay:-7s"></div>
+      <div class="wrap" style="position:relative;z-index:1">
+        <div class="eyebrow">The gallery</div>
+        <h1 class="display" data-split>Find the piece that <em class="ital">feels like home.</em></h1>
+        <p class="lead" id="g-sub">Every painting is an original made by hand. When an original sells, it's gone for good — but many live on as signed prints.</p>
+      </div>
+    </section>
+
+    <div class="filter-bar" id="filter-bar">
+      <div class="wrap fb-row">
+        <div class="fb-chips" id="fb-type" role="group" aria-label="Filter by type"></div>
+        <div class="fb-tools">
+          <label class="fb-search"><span class="sr-only">Search artworks</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg>
+            <input type="search" id="q" placeholder="Search titles, moods, colors…" autocomplete="off" enterkeyhint="search">
+          </label>
+          <label class="sr-only" for="sort">Sort by</label>
+          <select class="select fb-sort" id="sort">
+            <option value="featured">Sort: Artist's picks</option>
+            <option value="new">Newest first</option>
+            <option value="price-asc">Price: low to high</option>
+            <option value="price-desc">Price: high to low</option>
+            <option value="size-desc">Size: largest first</option>
+          </select>
+          <button class="chip fb-more-btn" id="fb-more-btn" aria-expanded="false" aria-controls="fb-more">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg> Filters <span id="fb-n"></span>
+          </button>
+        </div>
+      </div>
+      <div class="fb-more" id="fb-more" hidden>
+        <div class="wrap fb-more-grid">
+          <div><div class="label">Color</div><div class="color-dots" id="fb-color"></div></div>
+          <div><div class="label">Medium</div><div class="fb-chips wrap-chips" id="fb-medium"></div></div>
+          <div><div class="label">Price</div><div class="fb-chips wrap-chips" id="fb-price"></div></div>
+          <div><div class="label">Size</div><div class="fb-chips wrap-chips" id="fb-size"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <section class="wrap gallery-body" aria-live="polite">
+      <div class="result-line"><span id="result-count"></span><button class="link-u" id="clear-all" hidden>Clear all filters</button></div>
+      <div class="art-grid" id="grid"></div>
+      <div class="empty-state" id="empty" hidden>
+        <svg viewBox="0 0 120 100" fill="none"><path d="M30 70c-8-16 4-38 26-40s36 14 32 30-22 26-40 22" stroke="#1c1915" stroke-width="3" stroke-linecap="round"/><circle cx="84" cy="30" r="8" fill="#f3a712"/><circle cx="36" cy="30" r="5" fill="#2f4cc0"/><circle cx="60" cy="52" r="6" fill="#e2492f"/></svg>
+        <h2 class="h3" style="font-style:italic">Nothing matches — yet.</h2>
+        <p class="muted" id="empty-msg">Try a different color or price, or ask me to paint exactly what you're imagining.</p>
+        <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap"><button class="btn btn-ghost" id="empty-clear">Clear filters</button><a class="btn btn-accent" href="commissions.html">Commission a piece</a></div>
+      </div>
+    </section>
+
+    <section class="section commission-band">
+      <div class="wrap cb-inner" data-reveal>
+        <div>
+          <div class="eyebrow no-line" style="color:var(--ochre)">✺ Made just for you</div>
+          <h2 class="h2" style="margin:14px 0 12px">Can't find <em class="ital">the one?</em></h2>
+          <p class="lead" style="color:rgba(245,239,228,.75);margin:0" id="cb-text">Tell me about your space, your colors and your story — I'll paint something that exists nowhere else.</p>
+        </div>
+        <a class="btn btn-light btn-lg" href="commissions.html" data-magnetic>Start a commission <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </section>
+
+    <section class="section recent-sec" id="recent" hidden>
+      <div class="wrap"><div class="eyebrow">Recently viewed</div><div class="mini-row" id="recent-row"></div></div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="assets/js/core.js"></script>
+  <script src="assets/js/fx.js"></script>
+  <script src="assets/js/gallery.js"></script>
+</body>
+</html>

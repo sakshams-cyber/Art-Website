@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>About the Artist</title>
+  <meta name="description" content="Meet the artist — the story, the studio, and answers to common questions about buying original art.">
+  <meta name="theme-color" content="#f5efe4">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta property="og:type" content="profile">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..800,0..100,0..1;1,9..144,300..800,0..100,0..1&family=Manrope:wght@400;500;600;700;800&family=Mrs+Saint+Delafield&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="about">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-hero about-hero">
+      <div class="blob-bg" style="width:460px;height:460px;left:-140px;top:-100px;background:#f3a712"></div>
+      <div class="blob-bg" style="width:360px;height:360px;right:-80px;top:220px;background:#2f4cc0;opacity:.25;animation-delay:-8s"></div>
+      <div class="wrap about-grid">
+        <div class="about-copy">
+          <div class="eyebrow">About the artist</div>
+          <h1 class="display" data-split>Hi, I'm <em class="ital" id="ab-name">Shubhra</em>.</h1>
+          <div class="about-bio" id="ab-bio"></div>
+          <div class="signature" id="ab-sig" aria-hidden="true"></div>
+        </div>
+        <figure class="portrait big" data-reveal="right">
+          <span class="tape t1"></span><span class="tape t2"></span>
+          <img id="ab-portrait" src="assets/img/studio-palette.webp" alt="">
+          <figcaption class="hand" id="ab-cap">the studio palette ✺</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section statement-sec" id="statement-sec">
+      <div class="wrap-narrow center">
+        <div class="eyebrow no-line" style="justify-content:center">Artist statement</div>
+        <p class="big-quote" id="ab-statement" data-split></p>
+      </div>
+    </section>
+
+    <section class="section wall studio-strip">
+      <div class="wrap">
+        <div class="section-head"><div><div class="eyebrow">Recent work</div><h2 class="h2" style="margin-top:14px" data-split>Fresh off the <em class="ital">easel</em></h2></div><a class="btn btn-light" href="gallery.html">Visit the gallery</a></div>
+        <div class="strip" id="ab-strip"></div>
+      </div>
+    </section>
+
+    <section class="section" id="policies">
+      <div class="wrap policy-grid">
+        <article class="policy" id="shipping" data-reveal><span class="p-icon" style="--pc:var(--blue)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M2.5 6.5h11v9h-11zM13.5 9.5h4l3 3v3h-7z"/><circle cx="6.5" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg></span><h2 class="h3">Shipping</h2><div id="ab-ship"></div></article>
+        <article class="policy" id="returns" data-reveal style="--d:.1s"><span class="p-icon" style="--pc:var(--rose)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h11a5 5 0 0 1 0 10H9"/><path d="m8 5-4 4 4 4"/></svg></span><h2 class="h3">Returns</h2><div id="ab-returns"></div></article>
+        <article class="policy" id="coa" data-reveal style="--d:.2s"><span class="p-icon" style="--pc:var(--ochre)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M4 4h16v11H4z"/><path d="M8 8h8M8 11h5"/><circle cx="16.5" cy="16.5" r="2.5"/></svg></span><h2 class="h3">Authenticity & care</h2><div id="ab-coa"></div></article>
+      </div>
+    </section>
+
+    <section class="section faq-sec" id="faq">
+      <div class="wrap faq-grid">
+        <div><div class="eyebrow">Good questions</div><h2 class="h2" style="margin-top:14px" data-split>Frequently <em class="ital">asked</em></h2><p class="lead" style="margin-top:18px">Can't find your answer? <span id="ab-contact"></span></p></div>
+        <div class="aw-acc" id="ab-faq"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="assets/js/core.js"></script>
+  <script src="assets/js/fx.js"></script>
+  <script src="assets/js/pages.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Artwork</title>
+  <meta name="description" content="Original artwork for sale — hand-painted and signed.">
+  <meta name="theme-color" content="#f5efe4">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta property="og:type" content="product">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..800,0..100,0..1;1,9..144,300..800,0..100,0..1&family=Manrope:wght@400;500;600;700;800&family=Mrs+Saint+Delafield&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="artwork">
+  <a class="skip-link" href="#aw-buy">Skip to purchase options</a>
+  <div id="site-header"></div>
+
+  <main id="main" class="artwork-page">
+    <div class="wrap">
+      <nav class="breadcrumbs" aria-label="Breadcrumb" id="crumbs"><a href="index.html">Home</a><span>/</span><a href="gallery.html">Gallery</a></nav>
+      <div class="aw-grid" id="aw-root">
+        <div class="aw-media">
+          <div class="aw-stage" id="aw-stage">
+            <span class="frame" id="aw-frame" data-cursor-label="Click to zoom">
+              <img id="aw-img" alt="" decoding="async">
+              <span class="loupe" id="loupe" aria-hidden="true"></span>
+            </span>
+          </div>
+          <div class="aw-under">
+            <button class="tool-chip" id="aw-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2M11 8v6M8 11h6"/></svg> Inspect brushwork</button>
+            <span class="muted hand" style="font-size:20px" id="aw-hint">hover the painting to use the loupe</span>
+          </div>
+          <button class="room-card" id="room-card" data-cursor-label="Try it">
+            <span class="rc-scene" id="rc-scene"><span class="rc-art" id="rc-art"></span><span class="rc-sofa"></span><span class="rc-floor"></span></span>
+            <span class="rc-copy"><b>See it on a wall</b><span>Preview it to scale above a sofa — or upload a photo of your own wall.</span><span class="text-link" style="margin-top:6px">Try it now →</span></span>
+          </button>
+        </div>
+
+        <div class="aw-info" id="aw-info">
+          <div class="eyebrow no-line" id="aw-kind"></div>
+          <h1 class="aw-title" id="aw-title"></h1>
+          <p class="aw-by">by <a href="about.html" class="link-u" id="aw-artist"></a> <span id="aw-year"></span></p>
+          <div class="aw-price" id="aw-price"></div>
+          <div id="pp-msg" class="pp-msg"></div>
+
+          <form id="aw-buy" class="aw-form" novalidate>
+            <fieldset style="border:0;padding:0;margin:0"><legend class="label" style="margin-bottom:10px">Choose your version</legend><div class="opt-list" id="aw-opts" style="margin:0 0 16px"></div></fieldset>
+            <div class="aw-avail" id="aw-avail"></div>
+            <div class="aw-ctas" id="aw-ctas"></div>
+          </form>
+          <div class="aw-delivery" id="aw-delivery"></div>
+          <div class="pay-chips" id="aw-pay" style="justify-content:flex-start;margin-top:14px"></div>
+
+          <ul class="aw-trust" id="aw-trust"></ul>
+
+          <div class="aw-acc">
+            <details open><summary>The story behind it</summary><div class="acc-body"><p id="aw-desc"></p><div class="aw-note"><span class="sig" id="aw-sig"></span></div></div></details>
+            <details><summary>Details</summary><div class="acc-body"><dl class="specs" id="aw-specs"></dl></div></details>
+            <details><summary>Shipping & returns</summary><div class="acc-body" id="aw-ship"></div></details>
+            <details><summary>Caring for your art</summary><div class="acc-body" id="aw-care"></div></details>
+          </div>
+
+          <div class="aw-palette"><div class="label">The palette <span class="muted" style="font-weight:500">· click a swatch to dip your brush</span></div><div class="swatch-row" id="aw-colors"></div></div>
+          <div class="aw-share"><span class="label">Share</span><div id="aw-share" style="display:flex;gap:4px;flex-wrap:wrap"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section related-sec" id="related-sec">
+      <div class="wrap">
+        <div class="section-head"><div><div class="eyebrow">Pairs beautifully with</div><h2 class="h2" style="margin-top:14px">You may also <em class="ital">love</em></h2></div><a class="btn btn-ghost" href="gallery.html">All work</a></div>
+        <div class="art-grid" id="related"></div>
+      </div>
+    </section>
+
+    <div class="sticky-buy" id="sticky-buy" aria-hidden="true"></div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="assets/js/core.js"></script>
+  <script src="assets/js/fx.js"></script>
+  <script src="assets/js/artwork.js"></script>
+</body>
+</html>

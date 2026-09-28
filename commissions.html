@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Commission a Painting</title>
+  <meta name="description" content="Commission a one-of-a-kind painting made just for your space — landscapes, abstracts, portraits and pet portraits.">
+  <meta name="theme-color" content="#f5efe4">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..800,0..100,0..1;1,9..144,300..800,0..100,0..1&family=Manrope:wght@400;500;600;700;800&family=Mrs+Saint+Delafield&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="commissions">
+  <a class="skip-link" href="#commission-form">Skip to the form</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="blob-bg" style="width:420px;height:420px;right:-120px;top:-80px;background:#1f8a70;opacity:.28"></div>
+      <div class="blob-bg" style="width:380px;height:380px;left:-150px;top:140px;background:#e86a92;opacity:.35;animation-delay:-5s"></div>
+      <div class="wrap" style="position:relative;z-index:1">
+        <div class="eyebrow">Commissions</div>
+        <h1 class="display" data-split>A painting that exists <em class="ital">only for you.</em></h1>
+        <p class="lead" id="cm-text" style="max-width:640px"></p>
+        <div class="cm-facts" id="cm-facts"></div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:20px">
+      <div class="wrap cm-grid">
+        <ol class="cm-steps" id="cm-steps">
+          <li data-reveal><b>Tell me your idea</b><span>Share your space, colors, size and any photos or inspiration. No idea is too small.</span></li>
+          <li data-reveal style="--d:.08s"><b>Sketch & quote</b><span>Within a few days you'll get a sketch concept and a fixed price. A 50% deposit books your spot.</span></li>
+          <li data-reveal style="--d:.16s"><b>Watch it come alive</b><span>I'll send progress photos as the painting develops — you're part of the process.</span></li>
+          <li data-reveal style="--d:.24s"><b>Delivered to your door</b><span>Signed, certified, wrapped by hand and shipped insured, ready to hang.</span></li>
+        </ol>
+
+        <div class="cm-form-wrap" id="cm-wrap">
+          <form id="commission-form" class="co-sec" method="post" action="#" autocomplete="on" novalidate>
+            <h2 class="h3" style="font-style:italic">Start your commission</h2>
+            <div class="grid-2">
+              <div class="field"><label for="c-name">Your name</label><input class="input" id="c-name" name="name" autocomplete="name" required><div class="err">Please tell me your name.</div></div>
+              <div class="field"><label for="c-email">Email</label><input class="input" id="c-email" name="email" type="email" autocomplete="email" inputmode="email" required><div class="err">Please enter a valid email.</div></div>
+            </div>
+            <div class="grid-2">
+              <div class="field"><label for="c-type">What would you like?</label><select class="select" id="c-type" name="type"><option>Landscape</option><option>Abstract</option><option>Florals</option><option>Pet portrait</option><option>Portrait</option><option>Something else</option></select></div>
+              <div class="field"><label for="c-size">Size</label><select class="select" id="c-size" name="size"><option>Small (up to 12 in)</option><option selected>Medium (16–24 in)</option><option>Large (30 in +)</option><option>Not sure — help me choose</option></select></div>
+            </div>
+            <div class="grid-2">
+              <div class="field"><label for="c-budget">Budget</label><select class="select" id="c-budget" name="budget"></select></div>
+              <div class="field"><label for="c-date">Needed by <span class="opt">(optional)</span></label><input class="input" id="c-date" name="deadline" type="date"></div>
+            </div>
+            <div class="field"><span class="label">Colors & mood</span><div class="fb-chips wrap-chips" id="c-moods"></div></div>
+            <div class="field"><label for="c-desc">Tell me about it</label><textarea class="textarea" id="c-desc" name="description" required placeholder="The room it's for, what it should feel like, colors you love, the story behind it…"></textarea><div class="err">A few words about your idea helps me a lot!</div></div>
+            <div class="field"><label for="c-links">Reference photos or links <span class="opt">(optional)</span></label><textarea class="textarea" id="c-links" name="links" style="min-height:70px" placeholder="Paste links to Google Drive / Dropbox / Instagram / Pinterest"></textarea></div>
+            <input type="hidden" name="ref" id="c-ref">
+            <button class="btn btn-buy btn-lg btn-block" type="submit" data-magnetic>Send my request</button>
+            <p class="muted small center" style="margin:0">No commitment — you'll get a sketch and a quote first.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="assets/js/core.js"></script>
+  <script src="assets/js/fx.js"></script>
+  <script src="assets/js/pages.js"></script>
+</body>
+</html>

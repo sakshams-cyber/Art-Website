@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Shubhra — Original Paintings & Limited Prints</title>
+  <meta name="description" content="Original paintings and limited-edition prints. Hand-painted, signed, and shipped with care.">
+  <meta name="theme-color" content="#f5efe4">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Original Paintings & Limited Prints">
+  <meta property="og:description" content="Hand-painted, signed originals and limited-edition prints — shipped with care to your walls.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..800,0..100,0..1;1,9..144,300..800,0..100,0..1&family=Manrope:wght@400;500;600;700;800&family=Mrs+Saint+Delafield&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>try{if(!sessionStorage.getItem('seenIntro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro')}catch(e){}</script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <!-- ============ HERO: the living easel ============ -->
+    <section class="hero" aria-label="Introduction">
+      <div class="blob-bg" style="width:520px;height:520px;left:-160px;top:-120px;background:#f3a712"></div>
+      <div class="blob-bg" style="width:460px;height:460px;right:-120px;top:120px;background:#e86a92;animation-delay:-6s"></div>
+      <div class="blob-bg" style="width:380px;height:380px;left:35%;bottom:-200px;background:#2f4cc0;opacity:.22;animation-delay:-11s"></div>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <div class="hero-status"><span class="live-dot"></span><span id="hero-status">Studio open</span></div>
+          <h1 class="hero-name"><span class="hn-small" id="hero-hello">Hello, I'm</span><span class="hn-big" id="hero-name" data-split>Shubhra</span>
+            <svg class="hn-stroke" viewBox="0 0 600 40" preserveAspectRatio="none" aria-hidden="true"><path d="M6 26C90 12 190 8 300 12s190 12 290 2"/></svg>
+          </h1>
+          <p class="hero-role" id="hero-eyebrow" data-reveal style="--d:.35s">Original paintings & limited-edition prints</p>
+          <p class="lead hero-tag" id="hero-tagline" data-reveal style="--d:.45s"></p>
+          <div class="hero-ctas" data-reveal style="--d:.55s">
+            <a class="btn btn-buy btn-lg" href="gallery.html" data-magnetic>Enter the gallery <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="btn btn-ghost btn-lg" href="#artist">Meet the artist</a>
+          </div>
+          <ul class="hero-trust" data-reveal style="--d:.65s">
+            <li>Signed originals</li><li>Certificate of authenticity</li><li>Secure checkout</li>
+          </ul>
+        </div>
+
+        <div class="hero-easel" data-reveal="scale" style="--d:.2s">
+          <svg class="easel-legs" viewBox="0 0 400 560" aria-hidden="true">
+            <defs><linearGradient id="wood" x1="0" x2="1"><stop offset="0" stop-color="#9a6a3e"/><stop offset=".5" stop-color="#c18d5a"/><stop offset="1" stop-color="#8d5e35"/></linearGradient></defs>
+            <path d="M200 0 L60 560 L80 560 L206 30Z" fill="url(#wood)"/>
+            <path d="M200 0 L340 560 L320 560 L194 30Z" fill="url(#wood)"/>
+            <path d="M196 20 L204 20 L214 560 L186 560Z" fill="#7d5230" opacity=".85"/>
+            <rect x="70" y="430" width="260" height="16" rx="3" fill="url(#wood)"/>
+            <rect x="70" y="444" width="260" height="5" fill="#6d4526" opacity=".6"/>
+          </svg>
+          <div class="easel-canvas">
+            <canvas id="reveal-canvas" aria-label="Interactive painting: move your cursor or finger to paint color into the sketch" role="img"></canvas>
+            <div class="reveal-hud">
+              <span class="pill light" id="reveal-pct">Sketch · 0% painted</span>
+              <button class="pill light" id="reveal-reset" type="button" hidden>↺ Sketch again</button>
+            </div>
+          </div>
+          <a class="easel-plaque" id="easel-plaque" href="gallery.html"><span class="ep-label">On the easel</span><span class="ep-title" id="ep-title">…</span><span class="ep-price" id="ep-price"></span></a>
+          <div class="hero-hint hand" aria-hidden="true">move your brush over the sketch
+            <svg viewBox="0 0 80 50" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 8c20 4 40 14 56 32M60 40l-2-14M60 40l-13-3"/></svg>
+          </div>
+        </div>
+      </div>
+      <a href="#artist" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true"><div class="track" id="marquee-track"></div></div>
+
+    <!-- ============ MEET THE ARTIST ============ -->
+    <section class="section artist-sec" id="artist">
+      <div class="wrap artist-grid">
+        <figure class="portrait" data-reveal="left">
+          <span class="tape t1"></span><span class="tape t2"></span>
+          <img id="artist-portrait" src="assets/img/studio-palette.webp" alt="In the studio" loading="lazy">
+          <figcaption class="hand" id="portrait-cap">in the studio ✺</figcaption>
+        </figure>
+        <div class="artist-copy">
+          <div class="eyebrow" data-reveal>Meet the artist</div>
+          <h2 class="h2" data-split>Paintings made slowly, <em class="ital">for the walls you live with.</em></h2>
+          <p class="lead" id="artist-intro" data-reveal></p>
+          <blockquote class="statement" id="artist-statement" data-reveal></blockquote>
+          <div class="signature" id="artist-sig" aria-hidden="true">Shubhra</div>
+          <div class="stats" id="stats"></div>
+          <a class="btn btn-ghost" href="about.html" data-reveal>Read my story <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROMISE ============ -->
+    <section class="section promise-sec" aria-labelledby="promise-h">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="eyebrow" data-reveal>Collect with confidence</div><h2 class="h2" id="promise-h" data-split>Every piece arrives <span class="mark">ready to love.</span></h2></div>
+          <p class="lead" data-reveal>Buying original art online should feel exciting, not risky. Here's my promise to every collector.</p>
+        </div>
+        <div class="promise-grid" id="promise-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="section process-sec" aria-labelledby="process-h">
+      <div class="wrap">
+        <div class="eyebrow" data-reveal>The process</div>
+        <h2 class="h2" id="process-h" data-split>From blank canvas <em class="ital">to your wall.</em></h2>
+        <div class="process" id="process">
+          <svg class="process-line" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true"><path id="process-path" d="M10 60 C 160 -10, 280 130, 420 60 S 700 -10, 820 60 S 1060 130, 1190 50"/></svg>
+          <div class="process-steps" id="process-steps"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED (artist's picks) ============ -->
+    <div class="torn" aria-hidden="true"><svg viewBox="0 0 1440 40" preserveAspectRatio="none"><path fill="currentColor" d="M0 40V22l40-6 38 8 52-12 46 10 60-14 44 12 70-8 40 10 64-16 50 12 58-6 44 10 70-14 48 12 56-10 62 14 40-8 58 6 50-12 60 10 44-8 56 12 50-6 46 8 60-16 42 10 54-6 40 8V40Z"/></svg></div>
+    <section class="section wall featured-sec" id="featured" aria-labelledby="featured-h">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="eyebrow" data-reveal>The collector's selection</div><h2 class="h2" id="featured-h" data-split>Hand-picked <em class="ital">favorites</em></h2></div>
+          <p class="lead" data-reveal style="color:rgba(245,239,228,.75)" id="featured-lead">The pieces I'm proudest of right now. Originals are one of a kind — when they're gone, they're gone.</p>
+        </div>
+      </div>
+      <div class="feat-track" id="feat-track" tabindex="0" aria-label="Featured artworks — scroll horizontally"></div>
+      <div class="wrap feat-nav">
+        <div class="feat-progress"><i id="feat-bar"></i></div>
+        <div style="display:flex;gap:10px;align-items:center">
+          <button class="icon-btn feat-arrow" id="feat-prev" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+          <button class="icon-btn feat-arrow" id="feat-next" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          <a class="btn btn-light" href="gallery.html">View all work <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+    </section>
+    <div class="torn flip" aria-hidden="true"><svg viewBox="0 0 1440 40" preserveAspectRatio="none"><path fill="currentColor" d="M0 40V22l40-6 38 8 52-12 46 10 60-14 44 12 70-8 40 10 64-16 50 12 58-6 44 10 70-14 48 12 56-10 62 14 40-8 58 6 50-12 60 10 44-8 56 12 50-6 46 8 60-16 42 10 54-6 40 8V40Z"/></svg></div>
+
+    <!-- ============ TESTIMONIALS (only shows when you add some in the Studio) ============ -->
+    <section class="section testi-sec" id="testimonials" hidden aria-labelledby="testi-h">
+      <div class="wrap">
+        <div class="eyebrow" data-reveal>From collectors' homes</div>
+        <h2 class="h2" id="testi-h" data-split>Kind words</h2>
+        <div class="testi-grid" id="testi-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ COLLECTOR'S LIST ============ -->
+    <section class="section news-sec" id="join">
+      <div class="wrap-narrow news-card" data-reveal="scale">
+        <svg class="news-splat" viewBox="0 0 200 200" aria-hidden="true"><path fill="#f3a712" d="M100 30c16 0 16-20 30-16s0 24 12 32 26-8 30 6-18 16-14 30 24 14 16 28-24 2-32 12 4 30-12 30-10-20-28-18-22 20-34 12 6-24-6-32-30 4-30-12 18-12 14-26-22-18-12-30 24 6 32-6-6-30 8-32 14 24 30 24z"/></svg>
+        <div class="eyebrow no-line" style="color:var(--accent)">✺ Studio letters</div>
+        <h2 class="h2" id="news-h">Join the Collector's List</h2>
+        <p class="lead" id="news-text"></p>
+        <form class="inline-form light" data-newsletter novalidate>
+          <label class="sr-only" for="news-email">Email address</label>
+          <input id="news-email" type="email" name="email" autocomplete="email" placeholder="you@email.com" required>
+          <button class="btn btn-accent btn-sm" type="submit">Join the list</button>
+        </form>
+        <p class="muted" style="font-size:13px;margin:12px 0 0">No spam, ever. Just new paintings and the occasional studio story.</p>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="assets/js/core.js"></script>
+  <script src="assets/js/fx.js"></script>
+  <script src="assets/js/home.js"></script>
+</body>
+</html>
